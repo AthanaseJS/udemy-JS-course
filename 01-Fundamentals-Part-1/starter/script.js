@@ -73,3 +73,13 @@ else if (favourite == 13 ) {
 else {
   console.log ('Number is not 23, 7, 13!')
 }
+
+const hasDriverLicense = true 
+const hasGoodVision = true
+const isTired = true
+if(hasDriverLicense && hasGoodVision && !isTired) {
+  console.log('Sopo can drive!')
+} else {
+   console.log(`Sopo can't drive !`)
+}
+
