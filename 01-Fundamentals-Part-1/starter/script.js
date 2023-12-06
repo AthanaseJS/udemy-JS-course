@@ -71,7 +71,7 @@ else if (favourite == 7) {
 else if (favourite == 13 ) {
   console.log('13 is strange number !')}
 else {
-  console.log ('Number is not 23, 7, 13!')
+  console.log('Number is not 23, 7, 13!')
 }
 
 const hasDriverLicense = true 
@@ -83,3 +83,20 @@ if(hasDriverLicense && hasGoodVision && !isTired) {
    console.log(`Sopo can't drive !`)
 }
 
+const day = 'monday';
+
+switch(day) {
+  case 'monday':
+    console.log('monday activity')
+    console.log('Go to coting meetup')
+    break
+  case 'tuesday':
+    console.log('tuesday activity')
+    break
+  case 'wednesday':
+  case 'thursday':
+      console.log('to days activity')
+    break
+  default:
+    console.log('default activity')  
+}
