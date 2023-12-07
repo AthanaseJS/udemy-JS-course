@@ -100,3 +100,4 @@ switch(day) {
   default:
     console.log('default activity')  
 }
+
