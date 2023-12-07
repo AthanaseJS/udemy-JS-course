@@ -101,3 +101,6 @@ switch(day) {
     console.log('default activity')  
 }
 
+// if condition
+const age2 = 23
+ag2 >=18 ? console.log('I like to drink a wine') : console.log('I like to drink a water')
