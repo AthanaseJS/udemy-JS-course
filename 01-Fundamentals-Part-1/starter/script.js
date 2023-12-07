@@ -60,15 +60,15 @@ if(money) {
   console.log(`You should get a job!`)
 }
 
-const favourite = prompt("What is your favourite number ?")
-console.log(favourite)
-console.log(typeof favourite)
+const favorite = prompt("What is your favorite number ?")
+console.log(favorite)
+console.log(typeof favorite)
 
-if (favourite == 23) {
+if (favorite == 23) {
   console.log('Cool! 23 is an amazing number')}
-else if (favourite == 7) {
+else if (favorite == 7) {
   console.log('7 is cool too !')}
-else if (favourite == 13 ) {
+else if (favorite == 13 ) {
   console.log('13 is strange number !')}
 else {
   console.log('Number is not 23, 7, 13!')
@@ -78,9 +78,9 @@ const hasDriverLicense = true
 const hasGoodVision = true
 const isTired = true
 if(hasDriverLicense && hasGoodVision && !isTired) {
-  console.log('Sopo can drive!')
+  console.log('Sofia can drive!')
 } else {
-   console.log(`Sopo can't drive !`)
+   console.log(`Sofia can't drive !`)
 }
 
 const day = 'monday';
@@ -88,7 +88,7 @@ const day = 'monday';
 switch(day) {
   case 'monday':
     console.log('monday activity')
-    console.log('Go to coting meetup')
+    console.log('Go to meetup')
     break
   case 'tuesday':
     console.log('tuesday activity')
@@ -103,4 +103,14 @@ switch(day) {
 
 // if condition
 const age2 = 23
-ag2 >=18 ? console.log('I like to drink a wine') : console.log('I like to drink a water')
+age2 >=18 ? console.log('I like to drink a wine') : console.log('I like to drink a water')
+
+let drink2;
+if (age2>=18){
+ drink2='wine'
+}else {
+  drink2='water'
+}
+console.log(drink2)
+
+console.log(`I like to drink ${ age2>=18 ?'wine':'water'}`)
