@@ -29,7 +29,7 @@ const yearsUntilRetirement = function(birthYear, firstName) {
   console.log(yearsUntilRetirement(1944, 'Nadia'))
   console.log(yearsUntilRetirement(1968, 'Athanase'))
   
-  onst calcAverage = (score1, score2, score3) => (calc1+calc2+calc3)/calc3
+  const calcAverage = (score1, score2, score3) => (calc1+calc2+calc3)/calc3
 
 const scoreDelphine = calcAverage ()
 const scoreKoalas = calcAverage()
