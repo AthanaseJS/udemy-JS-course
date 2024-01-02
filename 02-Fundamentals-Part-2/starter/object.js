@@ -25,7 +25,7 @@ if(jonas[interestedIn]) {
     console.log('Wrong request!')
 }
 
-jonas.location = 'Portugal'
+jonas.location='Portugal'
 
 console.log(jonas)
 
