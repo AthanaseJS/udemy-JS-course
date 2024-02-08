@@ -1,3 +1,6 @@
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = new Array();
 const totals = new Array();

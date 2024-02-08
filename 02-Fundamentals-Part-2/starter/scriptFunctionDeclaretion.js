@@ -2,6 +2,7 @@
 
 let hasDriverLicense = false;
 const passTest = true;
+const currentYear = new Date().getFullYear();
 
 if (passTest) hasDriverLicense = true;
 if (hasDriverLicense) console.log("I can drive !");
@@ -28,7 +29,7 @@ console.log(appleJuice);
 
 // Function declaration
 function calcAge1(birthDay) {
-  const age = 2023 - birthDay;
+  const age = currentYear - birthDay;
   return age;
 }
 const age1 = calcAge1(1968);
@@ -36,17 +37,17 @@ console.log(age1);
 
 // Function expression
 const calcAge2 = function (birthDay) {
-  return 2023 - birthDay;
+  return currentYear - birthDay;
 };
 const age2 = calcAge2(2021);
 console.log(age2);
 
 // Arrow function
-const calcAge3 = (birthYear) => 2023 - birthYear;
+const calcAge3 = (birthYear) => currentYear - birthYear;
 console.log(`Sopo birth in 1998 and now she is ${calcAge3("1998")} years old`);
 
 const yearsUntilRetirement = (birthYear, firstName) => {
-  const age4 = 2023 - birthYear;
+  const age4 = currentYear - birthYear;
   const retirement = 65 - age4;
   return `${firstName} retires in ${retirement} years !`;
 };
