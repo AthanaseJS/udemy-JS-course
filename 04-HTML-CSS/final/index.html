@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link href="style.css" rel="stylesheet" />
-
     <title>Learning HTML & CSS</title>
   </head>
   <body>
+    <!-- Main Heading -->
     <h1>JavaScript is fun, but so is HTML & CSS!</h1>
+
+    <!-- Introductory Paragraph -->
     <p class="first">
       You can learn JavaScript without HTML and CSS, but for DOM manipulation
       it's useful to have some basic ideas of HTML & CSS. You can learn more
@@ -17,19 +18,27 @@
       <a href="https://www.udemy.com/user/jonasschmedtmann/">on Udemy</a>.
     </p>
 
+    <!-- Secondary Heading -->
     <h2>Another heading</h2>
     <p class="second">Just another paragraph</p>
 
+    <!-- Image Section -->
     <img
       id="course-image"
       src="https://img-a.udemycdn.com/course/480x270/437398_46c3_9.jpg"
+      alt="Course image from Udemy"
     />
 
+    <!-- Form Section -->
     <form id="your-name">
       <h2>Your name here</h2>
       <p class="first">Please fill in this form :)</p>
 
-      <input type="text" placeholder="Your name" />
+      <!-- Label and Input Field -->
+      <label for="name-input">Name:</label>
+      <input id="name-input" type="text" placeholder="Your name" required />
+
+      <!-- Button -->
       <button type="button">OK!</button>
     </form>
   </body>
