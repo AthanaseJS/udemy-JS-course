@@ -3,25 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal Window</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Modal window</title>
   </head>
   <body>
-    <button class="show-modal">Show modal 1</button>
-    <button class="show-modal">Show modal 2</button>
-    <button class="show-modal">Show modal 3</button>
+    <main>
+      <button type="button" class="show-modal" data-modal="1">
+        Show Modal 1
+      </button>
+      <button type="button" class="show-modal" data-modal="2">
+        Show Modal 2
+      </button>
+      <button type="button" class="show-modal" data-modal="3">
+        Show Modal 3
+      </button>
+    </main>
 
-    <div class="modal hidden">
-      <button class="close-modal">&times;</button>
-      <h1>I'm a modal window 😍</h1>
-      <p>
-        Flutter transforms the entire app development process. Build, test, and
-        deploy beautiful mobile, web, desktop, and embedded apps from a single
-        codebase.
-      </p>
-    </div>
-    <div class="overlay hidden"></div>
+    <section class="modal-container">
+      <!-- Modal -->
+      <div
+        class="modal hidden"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-description"
+      >
+        <button type="button" class="close-modal" aria-label="Close modal">
+          &times;
+        </button>
+        <h1 id="modal-title">I'm a Modal Window 😍</h1>
+        <p id="modal-description">
+          Trump said in an interview with The New York Post that he’s “a
+          believer in H-1B,” referring to the visas granted to thousands of
+          foreign workers who immigrate to the US to fill specialized jobs. In
+          his first term, Trump restricted access to foreign worker visas, and
+          he has previously criticized the program. But during the 2024
+          campaign, Trump signaled openness to giving some foreign-born workers
+          legal status if they graduated from a US university.
+        </p>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay hidden" aria-hidden="true"></div>
+    </section>
 
     <script src="script.js"></script>
   </body>
